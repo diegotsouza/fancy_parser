@@ -3,7 +3,7 @@ from IPython.display import display, HTML
 
 class FancyParse():
   def __init__(self, file_list):
-    self.files = files_list
+    self.files = file_list
     self.df = pd.DataFrame(self. files, columns=['file_path'])
 
   def add_col_parse(self,  column_to_parse=None, split_string=None, position_split=None, remove_end = ''):
