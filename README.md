@@ -1,11 +1,17 @@
 # fancy_parser
 test to parser
 
-
-#!pip uninstall FancyParser -y
-
-
+__How to install__:  
+```
+!pip uninstall FancyParser -y
 !pip install git+https://github.com/diegotsouza/fancy_parser.git
+
+```
+
+
+
+__Example__  
+
 
 ```python3
 # Case in the jupyter notebook
