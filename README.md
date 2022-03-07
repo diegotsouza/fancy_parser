@@ -19,7 +19,6 @@ __Example__
 files = experiment  = FancyParser(files)
 
 experiment.show_df()
-experiment.df['file_name'] =   experiment.add_col_parse( column_to_parse='file_path', split_string='/', position_split=-1, remove_end = '')
 experiment.df['replicate'] =     experiment.add_col_parse('file_name', '-', 1,'.bam')
 #Create a function to treate this cases
 experiment.df['mark'] = experiment.df['file_name'].apply(lambda x : x.split('_')[1].split('-')[0]) # create a function for this situation
