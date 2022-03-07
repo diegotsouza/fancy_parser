@@ -26,3 +26,7 @@ class FancyParser():
 
   def display_df(self):
     display(self.df)
+    
+  def load_from_df(self):
+    self.df = pd.read_csv(df_file_to_load ,sep='\t')
+ 
