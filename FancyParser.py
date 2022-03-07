@@ -1,7 +1,7 @@
 import pandas as pd
 from IPython.display import display, HTML
 
-class FancyParse():
+class FancyParser():
   def __init__(self, file_list):
     self.files = file_list
     self.df = pd.DataFrame(self. files, columns=['file_path'])
