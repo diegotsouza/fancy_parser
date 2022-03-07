@@ -1,5 +1,5 @@
 # fancy_parser
-test to parser
+Create and access your analyses files on the fly using a simple dataframe metadata estructure .  
 
 __How to install__:  
 ```
