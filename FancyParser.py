@@ -29,4 +29,7 @@ class FancyParser():
     
   def load_from_df(self):
     self.df = pd.read_csv(df_file_to_load ,sep='\t')
+    
+  def save_to_df(self, out_path, df_file_name):
+    pd.to_csv(out_path ,sep='\t', index=None)
  
