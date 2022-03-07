@@ -1,4 +1,4 @@
-# fancy_parser
+# FancyParser
 Create and access your analyses files on the fly using a simple dataframe metadata estructure .  
 
 __How to install__:  
@@ -16,7 +16,7 @@ __Example__
 ```python3
 # Case in the jupyter notebook
 !find .| grep bam  
-files = experiment  = FancyParse(files)
+files = experiment  = FancyParser(files)
 
 experiment.show_df()
 experiment.df['sample_name'] =   experiment.add_col_parse( column_to_parse='file_path', split_string='/', position_split=-1, remove_end = '')
