@@ -4,7 +4,7 @@ Create and access your analyses files on the fly using a simple dataframe metada
 __How to install__:  
 ```
 !pip uninstall FancyParser -y
-!pip install git+https://github.com/diegotsouza/fancy_parser.git
+!pip install git+https://github.com/LucasSilvaFerreira/fancy_parser.git
 
 ```
 
