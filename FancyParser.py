@@ -25,6 +25,19 @@ class FancyParser():
       self.df[new_column] = self.df[column_to_parse].apply(lambda x : return_type[0] if check_substr in x else return_type[1] )
     return self.df[column_to_parse].apply(lambda x : return_type[0] if check_substr in x else return_type[1] )
 
+
+  def add_flag_from_dict(self,  column_to_parse=None, dict_parse=None , return_type=None, new_column=None):
+    '''
+      ex:
+        dict_parse = {'treatment': [1,2,3,'10','s1'] , 'control': [5,6,7,'t1', 't3'] }
+        make sure your column_to_parse has the write type
+    '''
+    dict_parse_use = { v_i:k  for k,v in dict_parse.items() for v_i in v  }
+    print (dict_parse_use)
+    if new_column:
+      self.df[new_column] = self.df[column_to_parse].apply(lambda x : dict_parse_use[x])
+    return self.df[column_to_parse].apply(lambda x : dict_parse_use[x])
+
   def __repr__(self):
     self.display_df()
     return 'teste'
